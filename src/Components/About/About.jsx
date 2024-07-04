@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { TypeAnimation } from 'react-type-animation';
 
 const About = () => {
@@ -29,12 +30,13 @@ const About = () => {
             <p className="text-lg">
               My journey in web development started one years ago, and since then, I've worked on a variety of projects that showcase my skills in front-end development. Let's create something amazing together!
             </p>
-            <a
-              href="/contact"
-              className="btn bg-transparent border-[#643484] mt-4 text-white hover:bg-[#643484] hover:text-white px-10 hover:border-none"
-            >
-              Contact Me
-            </a>
+            <Link to="/contact">
+              <button
+                className="btn bg-transparent border-[#643484] mt-4 text-white hover:bg-[#643484] hover:text-white px-10 hover:border-none"
+              >
+                Contact Me
+              </button>
+            </Link>
           </div>
           <div className="relative">
             <div className="absolute inset-0 bg-gradient-to-t from-indigo-500 to-transparent rounded-lg shadow-lg transform rotate-2"></div>

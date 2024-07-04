@@ -42,7 +42,7 @@ const Banner = () => {
                             Resume <TbLocationDown className="text-lg ml-2" />
                         </button>
                         <Link to="/about">
-                            <button className="btn bg-transparent border-[#643484] mt-4 text-white hover:bg-[#643484] hover:text-white px-10 hover:border-none flex items-center justify-center">
+                            <button className="btn w-full bg-transparent border-[#643484] mt-4 text-white hover:bg-[#643484] hover:text-white px-10 hover:border-none flex items-center justify-center">
                                 About Me <TbLocationDown className="text-lg ml-2" />
                             </button>
                         </Link>
