@@ -5,12 +5,29 @@ import { SiJavascript } from "react-icons/si";
 import { RiFirebaseLine } from "react-icons/ri";
 import { FaReact } from "react-icons/fa6";
 import { SiMongodb } from "react-icons/si";
-import { RiLiveLine } from "react-icons/ri";
-import { IoCodeSlashSharp } from "react-icons/io5";
 import { TypeAnimation } from 'react-type-animation';
-import { Link } from 'react-router-dom';
-
+import { TbEyeShare } from "react-icons/tb";
+import { FaGithubSquare } from "react-icons/fa";
 const Portfolio = () => {
+
+  const handlePreviewClick1 = () => {
+    window.location.href = 'https://full-stack-project-785ad.web.app/'; // Replace with your desired URL
+    };
+    const handleCodeClick1 = () => {
+        window.location.href = 'https://github.com/mhshihab2604/Parcel-Project-Client'; // Replace with your desired URL
+    };
+    const handlePreviewClick2 = () => {
+        window.location.href = 'https://assignment-11-d3fcc.web.app/'; // Replace with your desired URL
+    };
+    const handleCodeClick2 = () => {
+        window.location.href = 'https://github.com/mhshihab2604/Volunteer-Project-Client'; // Replace with your desired URL
+    };
+    const handlePreviewClick3 = () => {
+        window.location.href = 'https://real-state-project-2604.netlify.app/'; // Replace with your desired URL
+    };
+    const handleCodeClick3 = () => {
+        window.location.href = 'https://github.com/mhshihab2604/Real-State-Assignment'; // Replace with your desired URL
+    };
   return (
     <div className='mx-2'>
       <div className="container mx-auto text-center mt-20">
@@ -55,20 +72,13 @@ const Portfolio = () => {
             </p>
           </div>
           <p>The Parcel Management System built using the MERN stack offers a comprehensive platform for booking and managing parcel deliveries. Users can book parcels with detailed information, while admins can assign delivery personnel and manage bookings efficiently.</p>
-          <div className="flex lg:flex-row flex-col justify-center lg:gap-4">
-            
-            <Link
-              to="https://full-stack-project-785ad.web.app"
-              className="btn bg-transparent border-[#643484] mt-4 text-white hover:bg-[#643484] hover:text-white px-10 hover:border-none flex items-center justify-center"
-            >
-                View Live <RiLiveLine className='text-xl'></RiLiveLine>
-            </Link> 
-            <Link
-              to="https://github.com/mhshihab2604/Parcel-Project-Client"
-              className="btn bg-transparent border-[#643484] mt-4 text-white hover:bg-[#643484] hover:text-white px-10 hover:border-none flex items-center justify-center"
-            >
-              Code Link <IoCodeSlashSharp className='text-xl'></IoCodeSlashSharp>
-            </Link>
+          <div className="flex items-center justify-center gap-6 text-sm md:text-base">
+              <button onClick={handlePreviewClick1} className="btn bg-transparent border-[#643484] mt-4 text-white hover:bg-[#643484] hover:text-white px-10 hover:border-none flex items-center justify-center">
+                  Preview <TbEyeShare />
+              </button>
+              <button onClick={handleCodeClick1} className="btn bg-transparent border-[#643484] mt-4 text-white hover:bg-[#643484] hover:text-white px-10 hover:border-none flex items-center justify-center">
+                  Code Link <FaGithubSquare />
+              </button>
           </div>
         </div>
         <div className="max-w-xl rounded overflow-hidden border-2 border-[#643484] p-2">
@@ -92,19 +102,13 @@ const Portfolio = () => {
             </p>
           </div>
           <p>Create a user-friendly Volunteer Management Website using MERN stack, featuring authentication, CRUD operations, dynamic routing, dark/light theme toggle, and optional features like animations and pagination.if you are logged in then that will be show.</p>
-          <div className="flex lg:flex-row flex-col justify-center lg:gap-4">
-            <Link
-              to="https://assignment-11-d3fcc.web.app"
-              className="btn bg-transparent border-[#643484] mt-4 text-white hover:bg-[#643484] hover:text-white px-10 hover:border-none flex items-center justify-center"
-            >
-              View Live <RiLiveLine className='text-xl'></RiLiveLine>
-            </Link>
-            <Link
-              to="https://github.com/mhshihab2604/Volunteer-Project-Client"
-              className="btn bg-transparent border-[#643484] mt-4 text-white hover:bg-[#643484] hover:text-white px-10 hover:border-none flex items-center justify-center"
-            >
-              Code Link <IoCodeSlashSharp className='text-xl'></IoCodeSlashSharp>
-            </Link>
+          <div className="flex items-center justify-center gap-6 text-sm md:text-base">
+              <button onClick={handlePreviewClick2} className="btn bg-transparent border-[#643484] mt-4 text-white hover:bg-[#643484] hover:text-white px-10 hover:border-none flex items-center justify-center">
+                  Preview <TbEyeShare />
+              </button>
+              <button onClick={handleCodeClick2} className="btn bg-transparent border-[#643484] mt-4 text-white hover:bg-[#643484] hover:text-white px-10 hover:border-none flex items-center justify-center">
+                  Code Link <FaGithubSquare />
+              </button>
           </div>
         </div>
         <div className="max-w-xl rounded overflow-hidden border-2 border-[#643484] p-2">
@@ -128,19 +132,13 @@ const Portfolio = () => {
             </p>
           </div>
           <p>A react project with some estates , where you can see states details to click view details button. you can register and login in my website,You update your profile also. and there are two privates route in my website,if you are logged in then that will be show.</p>
-          <div className="flex lg:flex-row flex-col justify-center lg:gap-4">
-            <Link
-              to="https://real-state-project-2604.netlify.app"
-              className="btn bg-transparent border-[#643484] mt-4 text-white hover:bg-[#643484] hover:text-white px-10 hover:border-none flex items-center justify-center"
-            >
-              View Live <RiLiveLine className='text-xl'></RiLiveLine>
-            </Link>
-            <Link
-              to="https://github.com/mhshihab2604/Real-State-Assignment"
-              className="btn bg-transparent border-[#643484] mt-4 text-white hover:bg-[#643484] hover:text-white px-10 hover:border-none flex items-center justify-center"
-            >
-              Code Link <IoCodeSlashSharp className='text-xl'></IoCodeSlashSharp>
-            </Link>
+          <div className="flex items-center justify-center gap-6 text-sm md:text-base">
+              <button onClick={handlePreviewClick3} className="btn bg-transparent border-[#643484] mt-4 text-white hover:bg-[#643484] hover:text-white px-10 hover:border-none flex items-center justify-center">
+                  Preview <TbEyeShare />
+              </button>
+              <button onClick={handleCodeClick3} className="btn bg-transparent border-[#643484] mt-4 text-white hover:bg-[#643484] hover:text-white px-10 hover:border-none flex items-center justify-center">
+                  Code Link <FaGithubSquare />
+              </button>
           </div>
         </div>
       </div>
