@@ -12,7 +12,7 @@ const Banner = () => {
     };
 
     return (
-        <div className="flex lg:flex-row flex-col-reverse justify-center items-center pt-10">
+        <div className="flex lg:flex-row flex-col-reverse justify-center items-center lg:pt-10">
             <div>
                 <div className="text-center mb-10">
                     <TypeAnimation

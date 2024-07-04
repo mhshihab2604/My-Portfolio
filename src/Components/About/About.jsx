@@ -39,9 +39,9 @@ const About = () => {
           <div className="relative">
             <div className="absolute inset-0 bg-gradient-to-t from-indigo-500 to-transparent rounded-lg shadow-lg transform rotate-2"></div>
             <img
-              src="https://i.ibb.co/BgXxwf1/Developer-removebg-preview.png"
+              src="https://i.ibb.co/nLCjYSb/shihab3-removebg-preview.png"
               alt="Your Portrait"
-              className="relative w-full h-full object-cover rounded-lg shadow-lg"
+              className="relative w-auto h-auto object-cover rounded-lg shadow-lg"
             />
           </div>
         </div>
