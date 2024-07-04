@@ -1,7 +1,8 @@
 import { TypeAnimation } from "react-type-animation";
 import { TbLocationDown } from "react-icons/tb";
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
 import image from "../../assets/home-main.svg";
+
 
 const Banner = () => {
     const handlePreviewClick1 = () => {
@@ -40,9 +41,11 @@ const Banner = () => {
                         <button onClick={handlePreviewClick1} className="btn bg-transparent border-[#643484] mt-4 text-white hover:bg-[#643484] hover:text-white px-10 hover:border-none flex items-center justify-center">
                             Resume <TbLocationDown className="text-lg ml-2" />
                         </button>
-                        <a href="/about" className="btn bg-transparent border-[#643484] mt-4 text-white hover:bg-[#643484] hover:text-white px-10 hover:border-none flex items-center justify-center">
-                            About Me <TbLocationDown className="text-lg ml-2" />
-                        </a>
+                        <Link to="/about">
+                            <button className="btn bg-transparent border-[#643484] mt-4 text-white hover:bg-[#643484] hover:text-white px-10 hover:border-none flex items-center justify-center">
+                                About Me <TbLocationDown className="text-lg ml-2" />
+                            </button>
+                        </Link>
                     </div>
                 </div>
             </div>
