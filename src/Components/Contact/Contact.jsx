@@ -1,7 +1,10 @@
 import { TypeAnimation } from 'react-type-animation';
 import emailjs from '@emailjs/browser';
 import { useRef, useState } from 'react';
-
+import { TbBrandInstagram } from 'react-icons/tb';
+import { Link } from 'react-router-dom';
+import { CiFacebook } from "react-icons/ci";
+import { FaGithub } from "react-icons/fa";
 const Contact = () => {
   const form = useRef();
   const [modalVisible, setModalVisible] = useState(false);
@@ -28,7 +31,6 @@ const Contact = () => {
     setModalVisible(false);
   };
 
-
   return (
     <section className="py-16 px-4">
       <div className="max-w-7xl mx-auto text-center">
@@ -50,6 +52,12 @@ const Contact = () => {
         <p className="text-lg text-gray-200 mb-8">
           Have any questions or want to work together? Fill out the form below to reach out.
         </p>
+        <h1>🌐 Social Link:</h1>
+        <div className="flex justify-center gap-4 py-2">
+            <Link to="https://www.instagram.com/mhshihab2604"><TbBrandInstagram className='text-2xl rounded-full shadow-[0px_2px_8px_0px_rgba(99,99,99,0.4)]  duration-300 hover:scale-150'></TbBrandInstagram></Link>
+            <Link to="https://www.facebook.com/mhshihab2604"><CiFacebook className='text-2xl rounded-full shadow-[0px_2px_8px_0px_rgba(99,99,99,0.4)]  duration-300 hover:scale-150'></CiFacebook></Link>
+            <Link to="https://github.com/mhshihab2604"><FaGithub className='text-2xl rounded-full shadow-[0px_2px_8px_0px_rgba(99,99,99,0.4)]  duration-300 hover:scale-150'></FaGithub></Link>
+        </div>
         <form ref={form} onSubmit={sendEmail} className="max-w-lg mx-auto p-6 bg-white rounded-lg shadow-md">
           <div className="mb-4">
             <label className="block text-start text-gray-700 text-sm font-bold mb-2" htmlFor="user_name">Name</label>

@@ -8,6 +8,7 @@ import { SiMongodb } from "react-icons/si";
 import { RiLiveLine } from "react-icons/ri";
 import { IoCodeSlashSharp } from "react-icons/io5";
 import { TypeAnimation } from 'react-type-animation';
+import { Link } from 'react-router-dom';
 
 const Portfolio = () => {
   return (
@@ -53,19 +54,21 @@ const Portfolio = () => {
               <SiMongodb className='h-10 w-10 text-[#479241]'></SiMongodb>
             </p>
           </div>
+          <p>The Parcel Management System built using the MERN stack offers a comprehensive platform for booking and managing parcel deliveries. Users can book parcels with detailed information, while admins can assign delivery personnel and manage bookings efficiently.</p>
           <div className="flex lg:flex-row flex-col justify-center lg:gap-4">
-            <a
-              href="https://full-stack-project-785ad.web.app"
+            
+            <Link
+              to="https://full-stack-project-785ad.web.app"
               className="btn bg-transparent border-[#643484] mt-4 text-white hover:bg-[#643484] hover:text-white px-10 hover:border-none flex items-center justify-center"
             >
-              View Live <RiLiveLine className='text-xl'></RiLiveLine>
-            </a>
-            <a
-              href="https://github.com/mhshihab2604/Parcel-Project-Client"
+                View Live <RiLiveLine className='text-xl'></RiLiveLine>
+            </Link> 
+            <Link
+              to="https://github.com/mhshihab2604/Parcel-Project-Client"
               className="btn bg-transparent border-[#643484] mt-4 text-white hover:bg-[#643484] hover:text-white px-10 hover:border-none flex items-center justify-center"
             >
               Code Link <IoCodeSlashSharp className='text-xl'></IoCodeSlashSharp>
-            </a>
+            </Link>
           </div>
         </div>
         <div className="max-w-xl rounded overflow-hidden border-2 border-[#643484] p-2">
@@ -88,19 +91,20 @@ const Portfolio = () => {
               <SiMongodb className='h-10 w-10 text-[#479241]'></SiMongodb>
             </p>
           </div>
+          <p>Create a user-friendly Volunteer Management Website using MERN stack, featuring authentication, CRUD operations, dynamic routing, dark/light theme toggle, and optional features like animations and pagination.if you are logged in then that will be show.</p>
           <div className="flex lg:flex-row flex-col justify-center lg:gap-4">
-            <a
-              href="https://assignment-11-d3fcc.web.app"
+            <Link
+              to="https://assignment-11-d3fcc.web.app"
               className="btn bg-transparent border-[#643484] mt-4 text-white hover:bg-[#643484] hover:text-white px-10 hover:border-none flex items-center justify-center"
             >
               View Live <RiLiveLine className='text-xl'></RiLiveLine>
-            </a>
-            <a
-              href="https://github.com/mhshihab2604/Volunteer-Project-Client"
+            </Link>
+            <Link
+              to="https://github.com/mhshihab2604/Volunteer-Project-Client"
               className="btn bg-transparent border-[#643484] mt-4 text-white hover:bg-[#643484] hover:text-white px-10 hover:border-none flex items-center justify-center"
             >
               Code Link <IoCodeSlashSharp className='text-xl'></IoCodeSlashSharp>
-            </a>
+            </Link>
           </div>
         </div>
         <div className="max-w-xl rounded overflow-hidden border-2 border-[#643484] p-2">
@@ -123,19 +127,20 @@ const Portfolio = () => {
               <SiMongodb className='h-10 w-10 text-[#479241]'></SiMongodb>
             </p>
           </div>
+          <p>A react project with some estates , where you can see states details to click view details button. you can register and login in my website,You update your profile also. and there are two privates route in my website,if you are logged in then that will be show.</p>
           <div className="flex lg:flex-row flex-col justify-center lg:gap-4">
-            <a
-              href="https://real-state-project-2604.netlify.app"
+            <Link
+              to="https://real-state-project-2604.netlify.app"
               className="btn bg-transparent border-[#643484] mt-4 text-white hover:bg-[#643484] hover:text-white px-10 hover:border-none flex items-center justify-center"
             >
               View Live <RiLiveLine className='text-xl'></RiLiveLine>
-            </a>
-            <a
-              href="https://github.com/mhshihab2604/Real-State-Assignment"
+            </Link>
+            <Link
+              to="https://github.com/mhshihab2604/Real-State-Assignment"
               className="btn bg-transparent border-[#643484] mt-4 text-white hover:bg-[#643484] hover:text-white px-10 hover:border-none flex items-center justify-center"
             >
               Code Link <IoCodeSlashSharp className='text-xl'></IoCodeSlashSharp>
-            </a>
+            </Link>
           </div>
         </div>
       </div>
