@@ -18,13 +18,13 @@ const Banner = () => {
                 <div className="text-center mb-10">
                     <TypeAnimation
                         sequence={[
-                            'Hello',
+                            'A ',
                             1000,
-                            'Hello Everyone',
+                            'A Developer',
                             2000,
-                            'How are you',
+                            'A Dreamer',
                             2000,
-                            'This is me',
+                            'A Explorer',
                             2000,
                         ]}
                         speed={50}
